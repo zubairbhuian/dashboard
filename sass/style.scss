@@ -1,0 +1,107 @@
+
+
+
+
+
+// =======================================================================
+// ================================ Bootstrap ============================
+// =======================================================================
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/_functions";
+@import "../node_modules/bootstrap/scss/variables";
+// =======================================================================
+// ================================ Variables ============================
+// =======================================================================
+// Social color
+$facebook: #3b5998;
+$instagram: #e4405f;
+$linkedin: #007bb5;
+$pinterest: #007bb5;
+:root {
+  --header-height: 3.5rem;
+  // Colors
+  --primary-color: #b30e0e;
+  --secondary-color: #193a80;
+  --title-color: #3e4657;
+  --description-color: #676b74;
+  --meta-color: #817e7e;
+  --desable-color: #dbdbdb;
+  --background-color: #193a7f;
+  --border-color: #e8e8e8;
+  --white-color: #ffffff;
+  --body-color:rgb(238, 78, 78);
+  --body-font: "Poppins", sans-serif;
+  --heading-font: "Anton", sans-serif;
+  --regular: 400;
+  --medium: 500;
+  --bold: 600;
+  --normal-font-size: 1.125rem;
+  --small-font-size: 1rem;
+  --smaller-font-size: 0.875rem;
+  --z-10: 10;
+  --z-100: 100;
+  --z-999: 999;
+  @media screen and (max-width: 992px) {
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.775rem;
+  }
+}
+// =======================================================================
+// ================================== Base css ===========================
+// =======================================================================
+// selection
+*::selection {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+// custrom Scrollbar
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--white-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 10px;
+}
+body {
+  font-size: var(--normal-font-size);
+  font-family: var(--body-font);
+  color: var(--white-color);
+  background-color: var(--body-color);
+}
+a {
+  text-decoration: none;
+}
+input {
+  border: none !important;
+  outline: none !important;
+}
+
+.btn {
+  font-weight: var(--bold);
+  color: var(--white-color);
+  padding: 16px 12px;
+  background: var(--primary-color);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+// =======================================================================
+// ================================= Import CSS ==========================
+// =======================================================================
+@import './base/base';
+// components
+@import "./Components/banner";
+// pages
+@import "./pages/home";
+// =======================================================================
+// ================================Production CSS=========================
+// =======================================================================
