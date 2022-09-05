@@ -19,7 +19,8 @@
     "framework"
   ],
   "dependencies": {
-    "bootstrap": "^5.2.0"
+    "bootstrap": "^5.2.0",
+    "mdb-ui-kit": "^5.0.0"
   },
   "author": "zubair",
   "license": "ISC"

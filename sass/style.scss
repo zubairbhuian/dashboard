@@ -20,8 +20,9 @@ $pinterest: #007bb5;
 :root {
   --header-height: 3.5rem;
   // Colors
-  --primary-color: #b30e0e;
+  --primary-color:rgb(238, 78, 78);
   --secondary-color: #193a80;
+  --text-color: #1f2022;
   --title-color: #3e4657;
   --description-color: #676b74;
   --meta-color: #817e7e;
@@ -29,7 +30,7 @@ $pinterest: #007bb5;
   --background-color: #193a7f;
   --border-color: #e8e8e8;
   --white-color: #ffffff;
-  --body-color:rgb(238, 78, 78);
+  --body-color: #ffffff;
   --body-font: "Poppins", sans-serif;
   --heading-font: "Anton", sans-serif;
   --regular: 400;
@@ -57,7 +58,7 @@ $pinterest: #007bb5;
 }
 // custrom Scrollbar
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -66,12 +67,12 @@ $pinterest: #007bb5;
 
 ::-webkit-scrollbar-thumb {
   background-color: var(--primary-color);
-  border-radius: 10px;
+  border-radius: 5px;
 }
 body {
   font-size: var(--normal-font-size);
   font-family: var(--body-font);
-  color: var(--white-color);
+  color: var(--text-color);
   background-color: var(--body-color);
 }
 a {
@@ -83,13 +84,7 @@ input {
 }
 
 .btn {
-  font-weight: var(--bold);
-  color: var(--white-color);
-  padding: 16px 12px;
-  background: var(--primary-color);
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
+
   align-items: center;
   border: none;
   outline: none;
@@ -105,3 +100,48 @@ input {
 // =======================================================================
 // ================================Production CSS=========================
 // =======================================================================
+.home-page-main{
+  display: flex;
+}
+.side-appbar{
+  width: 300px;
+  background-color: red;
+}
+.body-side{
+  background-color: blue;
+  flex-grow: 1;
+  height: 100vh;
+}
+.top-appbar{
+  background-color: green;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .navbar{
+    width: 100%;
+    margin: 0;
+  }
+  .menu-bar{
+    .btn{
+      box-shadow: none;
+    }
+   svg{
+    width: 25px !important;
+    height: 25px !important;
+    fill:var(--text-color) ;
+   }
+  }
+  
+}
+.profile-sect{
+    svg{
+      width: 20px !important;
+      height: 20px !important;
+      fill: var(--title-color) !important;
+    }
+    
+}
+.navbar-collapse{
+flex-basis: auto;
+}
